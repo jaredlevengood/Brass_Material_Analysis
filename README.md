@@ -14,13 +14,21 @@ This project analyzes tensile test data for a brass specimen using MATLAB. It co
 
 Brass_Material_Analysis/
 │
+
 ├── Brass_Material_Analysis.m        (main MATLAB analysis script)
+
 ├── B5_4.csv                         (raw tensile test data: force & elongation)
+
 ├── .gitignore                       (ignores autosave/backup files)
+
 └── figures/                         (exported plots)
+
 ├── stress_strain_mpa.png
+
 ├── stress_strain_ksi.png
+
 ├── linear_elastic_fit.png
+
 └── offset_yield_method.png
 
 --------------------------------------------
