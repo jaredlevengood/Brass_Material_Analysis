@@ -18,10 +18,10 @@ Brass_Material_Analysis/
 ├── B5_4.csv                         (raw tensile test data: force & elongation)
 ├── .gitignore                       (ignores autosave/backup files)
 └── figures/                         (exported plots)
-      ├── stress_strain_mpa.png
-      ├── stress_strain_ksi.png
-      ├── linear_elastic_fit.png
-      └── offset_yield_method.png
+├── stress_strain_mpa.png
+├── stress_strain_ksi.png
+├── linear_elastic_fit.png
+└── offset_yield_method.png
 
 --------------------------------------------
 
@@ -71,10 +71,7 @@ Requirements:
 Steps:
 1. Open MATLAB  
 2. Set Current Folder to this project  
-3. Run:
-
-   Brass_Material_Analysis
-
+3. Run: Brass_Material_Analysis
 4. View generated figures  
 5. Read mechanical property results printed in the Command Window  
 
