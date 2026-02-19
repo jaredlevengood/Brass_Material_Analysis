@@ -12,24 +12,14 @@ This project analyzes tensile test data for a brass specimen using MATLAB. It co
 
 ## Project Structure
 
-Brass_Material_Analysis/
-│
-
-├── Brass_Material_Analysis.m        (main MATLAB analysis script)
-
-├── B5_4.csv                         (raw tensile test data: force & elongation)
-
-├── .gitignore                       (ignores autosave/backup files)
-
-└── figures/                         (exported plots)
-
-├── stress_strain_mpa.png
-
-├── stress_strain_ksi.png
-
-├── linear_elastic_fit.png
-
-└── offset_yield_method.png
+* `Brass_Material_Analysis.m`: The main MATLAB analysis script.
+* `B5_4.csv`: The raw tensile test data containing force and elongation measurements.
+* `.gitignore`: Ignores MATLAB autosave and backup files.
+* `figures/`: Directory containing the exported plot visualizations.
+  * `stress_strain_mpa.png`: Stress vs. strain plot (MPa).
+  * `stress_strain_ksi.png`: Stress vs. strain plot (ksi).
+  * `linear_elastic_fit.png`: Visualization of the linear regression fit for the elastic region.
+  * `offset_yield_method.png`: Visualization of the 0.2% offset method for yield strength.
 
 --------------------------------------------
 
@@ -73,13 +63,13 @@ Specimen parameters:
 
 Requirements:
 - MATLAB
-- Brass_Material_Analysis.m
-- B5_4.csv
+- 'Brass_Material_Analysis.m'
+- 'B5_4.csv'
 
 Steps:
 1. Open MATLAB  
 2. Set Current Folder to this project  
-3. Run: Brass_Material_Analysis
+3. Run: 'Brass_Material_Analysis'
 4. View generated figures  
 5. Read mechanical property results printed in the Command Window  
 
