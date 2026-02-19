@@ -14,7 +14,6 @@ This project analyzes tensile test data for a brass specimen using MATLAB. It co
 
 * `Brass_Material_Analysis.m`: The main MATLAB analysis script.
 * `B5_4.csv`: The raw tensile test data containing force and elongation measurements.
-* `.gitignore`: Ignores MATLAB autosave and backup files.
 * `figures/`: Directory containing the exported plot visualizations.
   * `stress_strain_mpa.png`: Stress vs. strain plot (MPa).
   * `stress_strain_ksi.png`: Stress vs. strain plot (ksi).
