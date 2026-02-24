@@ -1,24 +1,13 @@
 # Brass Material Analysis (MATLAB)
 
-This project analyzes tensile test data for a brass specimen using MATLAB. It computes and visualizes the stress–strain response and extracts key mechanical properties, including:
+This project utilizes MATLAB to perform a comprehensive tensile test analysis on a brass specimen. By processing raw force and elongation data, the script automates the calculation of fundamental mechanical properties and provides high-fidelity visualizations of material behavior.
 
-- Modulus of elasticity (E)
-- Yield strength (0.2% offset method)
-- Ultimate tensile strength (UTS)
-- Fracture stress
-- Toughness (area under the stress–strain curve)
-
---------------------------------------------
-
-## Project Structure
-
-* `Brass_Material_Analysis.m`: The main MATLAB analysis script.
-* `B5_4.csv`: The raw tensile test data containing force and elongation measurements.
-* `figures/`: Directory containing the exported plot visualizations.
-  * `stress_strain_mpa.png`: Stress vs. strain plot (MPa).
-  * `stress_strain_ksi.png`: Stress vs. strain plot (ksi).
-  * `linear_elastic_fit.png`: Visualization of the linear regression fit for the elastic region.
-  * `offset_yield_method.png`: Visualization of the 0.2% offset method for yield strength.
+## Key Mechanical Properties Computed:
+- **Modulus of Elasticity (E)**: Determined via linear regression of the elastic region.
+- **Yield Strength**: Calculated using the **0.2% Offset Method**.
+- **Ultimate Tensile Strength (UTS)**
+- **Fracture Stress**.
+- **Toughness**: Calculated through numerical integration (Area under the curve).
 
 --------------------------------------------
 
@@ -37,6 +26,26 @@ The script converts this into engineering quantities:
 Specimen parameters:
 - Initial gauge length: 78 mm
 - Cross-sectional area: 0.506 mm²
+
+--------------------------------------------
+
+## Analysis Visualizations
+The following plots were generated to validate the material properties and visualize the specimen's transition from elastic to plastic deformation.
+
+### 1. Stress-Strain Response
+These plots represent the full material behavior from initial loading to fracture.
+
+| Metric (MPa) | Metric (ksi) |
+| :--- | :--- |
+| ![Stress-Strain MPa](./figures/stress_strain_mpa.png) | ![Stress-Strain ksi](./figures/stress_strain_ksi.png) |
+
+### 2. Engineering Calculations
+To derive specific properties, the script isolates the elastic region and applies standard engineering approximations.
+
+| Linear Elastic Fit | 0.2% Offset Yield Method |
+| :--- | :--- |
+| ![Linear Fit](./figures/linear_region_fit.png) | ![Offset Yield](./figures/offset_yield_plot.png) |
+| *Linear regression (polyfit) used to calculate Young's Modulus.* | *Graphical intersection used to determine the Yield Point.* |
 
 --------------------------------------------
 
